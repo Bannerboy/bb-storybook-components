@@ -20,11 +20,13 @@ Once the dependencies are installed, you need to run `yarn start` and once the b
 
 The project was made with the following structure
 
+```
 |- src
 | |_ components
 | |_ foundations
 | |_ styles
 | |_ utils
+```
 
 ### src/components
 
@@ -46,10 +48,12 @@ Helper functions and helper components should live here
 
 Each component is made by 3 different elements
 
+```
 |-Button
 | |_ Button.jsx (where your react component lives)
 | |_ button.scss (styles specific to that component)
-| |\_ Button.stories.jsx (to be explained in the next section )
+| |_ Button.stories.jsx (to be explained in the next section )
+```
 
 ## Adding a story
 
