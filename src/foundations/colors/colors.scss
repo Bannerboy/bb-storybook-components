@@ -1,0 +1,20 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables.scss';
+
+.swatch-container {
+  margin-top: 50px;
+  .swatch {
+    display: flex;
+    padding-bottom: $spacing-unit;
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      &.hex {
+        text-transform: uppercase;
+      }
+    }
+    .swatch-info {
+      padding-left: $spacing-unit;
+    }
+  }
+}

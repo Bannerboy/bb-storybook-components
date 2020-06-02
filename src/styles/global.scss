@@ -1,7 +1,30 @@
 @import './reset.scss';
 @import './fonts.scss';
+@import './variables.scss';
 
 body {
-  font-size: 18px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  max-width: $page-max-width;
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
 }
