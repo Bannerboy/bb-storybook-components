@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './colors.scss';
+import '../colors/colors.scss'; // the scss for this lives in foundatinos/colors, sorry
 
 const TextColorSwatch = ({ txtColorsDataLight, txtColorsDataDark }) => {
   return (

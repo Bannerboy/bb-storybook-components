@@ -13,7 +13,7 @@ const ColorSwatch = ({ colorsData }) => {
               backgroundColor: color.background,
               width: '100px',
               height: '100px',
-              border: '1px solid #333333',
+              border: '1px solid #e0e0e0',
             }}
           />
           <div className="swatch-info">
