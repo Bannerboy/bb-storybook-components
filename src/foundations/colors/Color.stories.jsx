@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 // import getDocs from '../../utils/getDocs';
 import ColorSwatch from './ColorSwatch';
+import TextColorSwatch from './TextColorSwatch';
 
 const brandColorsData = [
   {
@@ -60,7 +61,59 @@ const brandColorsData = [
     rgba: 'rgba(0, 0, 0, 1)',
   },
 ];
+const txtColorsLight = [
+  {
+    text: 'Primary',
+    hex: '#ffffff',
+    rgba: 'rgba(255, 255, 255, 1)',
+  },
+  {
+    text: 'Secondary',
+    hex: '#ffffff',
+    rgba: 'rgba(255, 255, 255, 0.7)',
+  },
+  {
+    text: 'Disabled',
+    hex: '#ffffff',
+    rgba: 'rgba(255, 255, 255, 0.3)',
+  },
+  {
+    text: 'Captions',
+    hex: '#ffffff',
+    rgba: 'rgba(255, 255, 255, 0.5)',
+  },
+];
+
+const txtColorsDark = [
+  {
+    text: 'Primary',
+    hex: '#000000',
+    rgba: 'rgba(0, 0, 0, 1)',
+  },
+  {
+    text: 'Secondary',
+    hex: '#000000',
+    rgba: 'rgba(0, 0, 0, 0.7)',
+  },
+  {
+    text: 'Disabled',
+    hex: '#000000',
+    rgba: 'rgba(0, 0, 0, 0.2)',
+  },
+  {
+    text: 'Captions',
+    hex: '#000000',
+    rgba: 'rgba(0, 0, 0, 0.5)',
+  },
+];
 
 storiesOf('Foundations/Colors', module).add('Branding', () => (
   <ColorSwatch colorsData={brandColorsData} />
+));
+
+storiesOf('Foundations/Colors', module).add('Text & Background', () => (
+  <TextColorSwatch
+    txtColorsDataLight={txtColorsLight}
+    txtColorsDataDark={txtColorsDark}
+  />
 ));

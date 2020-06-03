@@ -5,7 +5,8 @@
   margin-top: 50px;
   .swatch {
     display: flex;
-    padding-bottom: $spacing-unit;
+    flex-wrap: wrap;
+    margin: $spacing-unit/2 0;
     p {
       font-weight: 300;
       font-size: 18px;
@@ -15,6 +16,17 @@
     }
     .swatch-info {
       padding-left: $spacing-unit;
+    }
+    &.txt-bg {
+      justify-content: space-around;
+      padding: $spacing-unit/2;
+      > div {
+        flex-basis: 25%;
+      }
+
+      p.rgba {
+        font-size: 15px;
+      }
     }
   }
 }

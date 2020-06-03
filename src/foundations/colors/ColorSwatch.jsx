@@ -5,6 +5,7 @@ import './colors.scss';
 const ColorSwatch = ({ colorsData }) => {
   return (
     <div className="swatch-container">
+      <h1>BB branding colors</h1>
       {colorsData.map((color) => (
         <div className="swatch" key={color.name}>
           <div
