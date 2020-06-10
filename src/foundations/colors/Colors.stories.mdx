@@ -1,0 +1,61 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+import { bbColors, bbNeutrals, interfaceActions } from '../../utils/colors';
+
+<Meta title="Design System/Foundations/Colors" />
+
+# Colors
+
+## Color Palette
+
+<ColorPalette>
+  <ColorItem
+    title="BB Background Colors"
+    colors={[
+      bbColors.bbBlue,
+      bbColors.bbBlueLight,
+      bbColors.bbCyan,
+      bbColors.bbDark,
+    ]}
+  />
+  <ColorItem
+    colors={[
+      bbColors.bbGreen,
+      bbColors.bbYellow,
+      bbColors.bbPink,
+      bbColors.bbViolet,
+    ]}
+  />
+
+  <ColorItem
+    title="BB Neutral Colors"
+    subtitle="White"
+    colors={[bbNeutrals.white]}
+  />
+  <ColorItem
+    title="BB Neutral Colors"
+    subtitle="Black"
+    colors={[
+      bbNeutrals.black,
+      bbNeutrals.textBlackSecondary,
+      bbNeutrals.textBlackDisabled,
+    ]}
+  />
+  <ColorItem
+    title="BB Neutral Colors"
+    subtitle="Grays"
+    colors={[
+      bbNeutrals.lightGrayishBlue,
+      bbNeutrals.lightGray,
+      bbNeutrals.darkGrayishBlue,
+    ]}
+  />
+  <ColorItem
+    title="BB Actions Colors"
+    subtitle="Interface messages"
+    colors={[
+      interfaceActions.warning,
+      interfaceActions.success,
+      interfaceActions.error, 
+    ]}
+  />
+</ColorPalette>
