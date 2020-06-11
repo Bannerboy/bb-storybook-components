@@ -1,6 +1,8 @@
 import React from 'react';
-import { addDecorator } from '@storybook/react';
+import { addDecorator, addParameters } from '@storybook/react';
 import { GlobalStyle } from '../src/utils';
+import { withContexts } from '@storybook/addon-contexts/react';
+import { contexts } from './contexts';
 
 export const parameters = {
   options: {
@@ -18,6 +20,14 @@ export const parameters = {
     hideEmpty: true,
   },
 };
+
+addParameters({
+  backgrounds: [
+    { name: 'Default theme', value: '#ffffff', default: true },
+    { name: 'Dark theme', value: '#050449' },
+  ],
+});
+addDecorator(withContexts(contexts));
 
 addDecorator((storyFn) => (
   <>
