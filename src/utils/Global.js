@@ -2,6 +2,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { bbFonts } from './typography';
+import '../styles/fonts.css';
 
 export const GlobalStyle = createGlobalStyle`
 ${normalize()}

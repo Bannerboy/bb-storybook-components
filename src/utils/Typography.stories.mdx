@@ -1,0 +1,39 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+import { typeScale, bbFonts } from './typography';
+
+<Meta title="Design System/Foundations/Typography" />
+
+# Typography
+
+**Font:** Gilroy Heavy
+
+<Typeset
+  fontSizes={[
+    typeScale.header1,
+    typeScale.header2,
+    typeScale.header3,
+    typeScale.header4,
+    typeScale.header5,
+    typeScale.paragraph,
+    typeScale.helperText,
+    typeScale.copyrightText,
+  ]}
+  fontFamily={bbFonts.headings}
+/>
+
+**Font:** Helvertica Neue
+
+<Typeset
+  fontSizes={[
+    typeScale.header1,
+    typeScale.header2,
+    typeScale.header3,
+    typeScale.header4,
+    typeScale.header5,
+    typeScale.paragraph,
+    typeScale.helperText,
+    typeScale.copyrightText,
+  ]}
+  fontFamily={bbFonts.primaryFont}
+/>

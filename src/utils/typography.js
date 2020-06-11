@@ -1,4 +1,4 @@
-import '../styles/fonts.css';
+import { css } from 'styled-components';
 
 export const bbFonts = {
   primaryFont: '"Helvetica Neue", sans-serif',
@@ -15,4 +15,18 @@ export const typeScale = {
   paragraph: '1rem',
   helperText: '0.8rem',
   copyrightText: '0.6rem',
+};
+
+export const typographies = {
+  header1: css`
+    font-family: ${bbFonts.headings};
+    font-size: ${typeScale.header1};
+  `,
+  header2: css({
+    fontFamily: bbFonts.headings,
+    fontSize: typeScale.header1,
+  }),
+  genericButton: css``,
+  largeButton: css``,
+  smallButton: css``,
 };
