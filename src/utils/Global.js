@@ -22,6 +22,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight:400;
 }
 main {
   width: 90%;

@@ -26,6 +26,9 @@ addParameters({
     { name: 'Default theme', value: '#ffffff', default: true },
     { name: 'Dark theme', value: '#050449' },
   ],
+  // options: {
+  //   storySort: (a, b) => a[1].id.localeCompare(b[1].id),
+  // },
 });
 addDecorator(withContexts(contexts));
 
