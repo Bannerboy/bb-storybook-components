@@ -35,7 +35,8 @@ export const Button = styled.button`
   }
 `;
 export const PrimaryButton = styled(Button)`
-  background-color: ${defaultTheme.primaryColor};
+  background-color: ${(props) =>
+    props.theme.primaryColor || defaultTheme.primaryColor};
   color: ${defaultTheme.textColorOnPrimary};
 
   &:hover {
