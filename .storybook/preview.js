@@ -1,5 +1,5 @@
 import React from 'react';
-import { addDecorator, addParameters } from '@storybook/react';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 import { GlobalStyle } from '../src/utils';
 import { withContexts } from '@storybook/addon-contexts/react';
 import { contexts } from './contexts';
@@ -26,10 +26,8 @@ addParameters({
     { name: 'Default theme', value: '#ffffff', default: true },
     { name: 'Dark theme', value: '#050449' },
   ],
-  // options: {
-  //   storySort: (a, b) => a[1].id.localeCompare(b[1].id),
-  // },
 });
+
 addDecorator(withContexts(contexts));
 
 addDecorator((storyFn) => (
@@ -38,3 +36,14 @@ addDecorator((storyFn) => (
     {storyFn()}
   </>
 ));
+
+// const loadStories = () => {
+//   return [
+//     // Ensure we load Intro First
+//     require.context('../src', true, /Intro.stories.mdx/),
+//     require.context('../docs', true, /About.stories.mdx/),
+//     require.context('../src/utils', true, /Colors.stories.mdx/),
+//   ];
+// };
+
+// configure(loadStories(), module);
