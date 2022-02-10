@@ -10,7 +10,7 @@
     "@storybook/addon-backgrounds": "^5.3.19",
     "@storybook/addon-contexts": "^5.3.19",
     "classnames": "^2.2.6",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "polished": "^3.6.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
